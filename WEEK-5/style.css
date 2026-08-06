@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:url("professional-website-hero-background-for-homepage_251S.webp") no-repeat center center fixed;
+    background-size:cover;
+}
+
+/* Header */
+.top-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    padding:15px;
+    background:rgba(0,45,80,0.75);
+    color:white;
+}
+
+.logo{
+    position:absolute;
+    left:30px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.title{
+    text-align:center;
+}
+
+.title h2{
+    font-size:32px;
+}
+
+.title h3{
+    margin-top:8px;
+    color:#ffe082;
+}
+
+/* Navigation */
+
+nav{
+    background:rgba(0,119,182,0.75);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px 0;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Login Container */
+
+.container{
+    width:360px;
+    margin:80px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.30);
+    backdrop-filter:blur(6px);
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.container h2{
+    color:#003f88;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#2b7bbb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0b5ea8;
+}
+
+#error{
+    margin-top:10px;
+    color:red;
+    font-weight:bold;
+}
+
+/* Success Page */
+
+.success{
+    width:70%;
+    margin:50px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.35);
+    backdrop-filter:blur(5px);
+    border-radius:10px;
+    color:#003f88;
+}
+
+.success h2{
+    color:green;
+    margin-bottom:15px;
+}
+
+.success p{
+    margin:15px 0;
+    line-height:1.6;
+}
+
+.notice{
+    margin-top:20px;
+    background:#fff8e6;
+    padding:20px;
+    border-left:6px solid orange;
+    border-radius:5px;
+}
+
+.notice h4{
+    color:#5c3d00;
+    margin-bottom:10px;
+}
+
+.notice ul{
+    margin-left:20px;
+}
+
+.notice li{
+    margin:8px 0;
+}
+
+footer{
+    width:100%;
+    background:rgba(0,45,80,0.75);
+    color:white;
+    text-align:center;
+    padding:12px;
+    position:fixed;
+    bottom:0;
+}

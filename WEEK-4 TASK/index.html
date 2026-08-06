@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        
+    <form action="">
+        <h3>REGISTRATION FORM</h3>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td>Enter your FirstName</td>
+                    <td>
+                        <input type="text" id="FirstName" name="FirstName" placeholder="Enter your FirstName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your MiddleName</td>
+                    <td>
+                        <input type="text" id="MiddleName" name="MiddleName" placeholder="Enter your MiddleName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter your Surname</td>
+                    <td>
+                        <input type="text" id="Surname" name="Surname" placeholder="Surname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Your Age</td>
+                    <td>
+                        <input type="number" id="Age" name="Age" placeholder="Age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Your Email</td>
+                    <td>
+                        <input type="email" id="Email" name="Email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Your Phone Number
+                    </td>
+                    <td>
+                        <input type="tel" id="Phone" name="phone" placeholder="1234567890">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Your Gender</td>
+                    <td>
+                    <input type="radio" id="Gender" name="Gender" value="Male">Male
+                    <input type="radio" id="Gender" name="Gender" value="Female">Female
+                    <input type="radio" id="Gender" name="Gender" value="Others">Others
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>College Details</legend>
+            <table>
+                <tr>
+                    <td>Enter Your College Name</td>
+                    <td>
+                        <input type="text" id="College" name="College" placeholder="Anits">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Your Branch</td>
+                    <td>
+                        <select name="Branch" id="Branch">
+                            <option value="CSE">CSE</option>
+                            <option value="CSM">CSM</option>
+                            <option value="CSD">CSD</option>
+                            <option value="IT">IT</option>
+                            <option value="EEE">EEE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="MECH">MECH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select the Year</td>
+                    <td>
+                        <select name="Year" id="Year">
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Your Semester</td>
+                    <td>
+                        <select name="sem" id="sem">
+                            <option value="1-1">1-1</option>
+                            <option value="1-2">1-2</option>
+                            <option value="2-1">2-1</option>
+                            <option value="2-2">2-2</option>
+                            <option value="3-1">3-1</option>
+                            <option value="3-2">3-2</option>
+                            <option value="4-1">4-1</option>
+                            <option value="4-2">4-2</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <Fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <td>Select your Subjects</td>
+                <td>
+                    <input type="checkbox" id="subject" name="subject" value="ML">ML
+                    <input type="checkbox" id="subject" name="subject" value="MFML">MFML
+                    <input type="checkbox" id="subject" name="subject" value="FS">FS
+                    <input type="checkbox" id="subject" name="subject" value="R PROG">R PROG 
+                    <input type="checkbox" id="subject" name="subject" value="DWDM">DWDM
+                </td>
+            </table>
+        </Fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+            <input type="checkbox" name="Declaration" id="Declaration"><p>I declare that these are my details</p>
+        </fieldset>
+        <div id="but" align="center">
+            <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

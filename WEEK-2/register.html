@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="title">
+                <h2>Anil Neerukonda Institute of Technology & Sciences</h2>
+                <h3>Campus Placement portal </h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="register-content">
+        <h1>Student Registration Form</h1>
+        <form action="success.html" method="get">
+            <fieldset>
+                <legend>
+                    <h3>Personal Information</h3>
+                </legend>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>
+                            <input type="text" name="username" placeholder="Enter your name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" name="password" placeholder="Enter Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td>
+                            <input type="email" name="email" placeholder="abc@gmail.com">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td>
+                            <input type="tel" name="Phone" placeholder="7396076389">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>
+                            <input type="number" min="5" max="60">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>
+                            <input type="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preferred Time</td>
+                        <td>
+                            <input type="time" name="time">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Registration Date & Time</td>
+                        <td>
+                            <input type="datetime-local" name="datetime-local">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Academic Information</h3>
+                </legend>
+                <table>
+                    <tr>
+                        <td>Department</td>
+                        <td>
+                            <select name="Department">
+                                <option value="csm">CSM</option>
+                                <option value="cse">CSE</option>
+                                <option value="ece">ECE</option>
+                                <option value="CSD">CSD</option>
+                                <option value="civil">CIVIL</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming Language</td>
+                        <td>
+                            <input type="text" name="lang">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="female">Female
+                            <input type="radio" name="gender" value="Other">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            <input type="checkbox" name="skills" value="html">Html
+                            <input type="checkbox" name="skills" value="css">Css
+                            <input type="checkbox" name="skills" value="Javascript">JavaScript
+                            <input type="checkbox" name="skills" value="java">Java
+                            <input type="checkbox" name="skills" value="python">Python
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Online Information</h3>
+                </legend>
+                <table>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td>
+                            <input type="url" name="url" placeholder="www.example.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Search Course</td>
+                        <td>
+                            <input type="search" name="search" placeholder="Search Course">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload Resume</td>
+                        <td>
+                            <input type="file" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Color</td>
+                        <td>
+                            <input type="color" name="color">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programming Skill Level </td>
+                        <td>
+                            Beginner<input type="range">Expert
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <textarea name="address" rows="2" cols="20" placeholder="Enter your address"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Declaration</h3>
+                </legend>
+                <input type="checkbox" name="Declaration" required>I hereby declare that the information provided above is true
+                and correct.
+            </fieldset>
+            <br>
+            <div class="register-submit">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+     <footer>2026 ANITS |Department of Training & Placement</footer>
+</body>
+
+</html>
