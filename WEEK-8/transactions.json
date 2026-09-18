@@ -1,0 +1,16 @@
+[
+  {
+    "transactionId": "TXN1789581191240544",
+    "userId": "1789581160287",
+    "type": "DEPOSIT",
+    "amount": 2500,
+    "date": "2026-09-16T17:53:11.240Z"
+  },
+  {
+    "transactionId": "TXN178958121121216",
+    "userId": "1789581160287",
+    "type": "WITHDRAW",
+    "amount": 250,
+    "date": "2026-09-16T17:53:31.212Z"
+  }
+]

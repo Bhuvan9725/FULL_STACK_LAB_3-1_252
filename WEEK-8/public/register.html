@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BST Bank | Register</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+<nav class="navbar">
+  <div class="brand">BST <span>BANK</span></div>
+  <div class="nav-links"><a href="index.html">Home</a><a href="login.html">Login</a></div>
+</nav>
+
+<div class="form-container">
+  <h1>Open BST Bank Account</h1>
+  <p class="muted">Create your online banking account</p>
+  <div id="message"></div>
+
+  <form id="registerForm">
+    <div class="grid-2">
+      <label>Full Name<input name="name" required></label>
+      <label>Date of Birth<input type="date" name="dob" required></label>
+      <label>Gender<select name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Mobile Number<input name="mobile" inputmode="numeric" maxlength="10" required></label>
+      <label>Username<input name="username" required></label>
+      <label>Password<input type="password" name="password" minlength="8" required></label>
+      <label>Confirm Password<input type="password" name="confirmPassword" minlength="8" required></label>
+    </div>
+    <label>Address<textarea name="address" rows="3" required></textarea></label>
+    <button class="btn primary full" type="submit">Create Account</button>
+  </form>
+  <p class="center">Already registered? <a href="login.html">Login here</a></p>
+</div>
+<script src="js/register.js"></script>
+</body>
+</html>

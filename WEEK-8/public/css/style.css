@@ -1,0 +1,58 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#172033;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.navbar{min-height:70px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#071a33;color:white;gap:20px}
+.brand{font-size:25px;font-weight:800;letter-spacing:1px}.brand span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:22px}.nav-links a:hover{opacity:.75}
+.hero{min-height:540px;padding:70px 8%;display:flex;align-items:center;justify-content:space-between;gap:50px;background:linear-gradient(135deg,#071a33,#123b68)}
+.hero-text{max-width:650px;color:white}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:10px}
+.hero h1{font-size:48px;line-height:1.1;margin-bottom:20px}.hero h1 span{display:block;color:#9ed8ff}
+.hero-text>p:not(.eyebrow){font-size:18px;color:#dbe9f7;max-width:600px}
+.hero-buttons{display:flex;gap:15px;margin-top:30px}
+.btn{border:0;border-radius:9px;padding:12px 20px;font-weight:700;cursor:pointer;display:inline-block}
+.primary{background:#0b79d0;color:white}.primary:hover{background:#0965ad}
+.secondary{background:white;color:#12304f}.full{width:100%;margin-top:10px}
+.bank-card{width:370px;height:220px;border-radius:20px;padding:25px;background:linear-gradient(135deg,#163e69,#071a33);color:white;box-shadow:0 25px 60px #0006;flex-shrink:0}
+.card-top,.card-bottom{display:flex;justify-content:space-between;font-weight:700}.chip{width:45px;height:34px;border-radius:7px;background:#d9c27c;margin-top:35px}
+.card-number{font-size:20px;letter-spacing:3px;margin:20px 0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:50px 8%;background:white}
+.feature{padding:25px;border-radius:15px;background:#f5f8fc}.feature h3{margin-bottom:8px;color:#0b5e9e}
+footer{text-align:center;padding:25px;background:#071a33;color:#c9d7e6}
+.form-page{min-height:100vh}.form-container,.login-box,.profile-container,.receipt{width:min(850px,92%);margin:45px auto;background:white;padding:35px;border-radius:18px;box-shadow:0 10px 35px #10253a14}
+.form-container h1,.login-box h1,.profile-container h1,.receipt h1{text-align:center;margin-bottom:5px}
+.muted{text-align:center;color:#718096;margin-bottom:25px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-weight:700;margin-bottom:15px}input,select,textarea{width:100%;margin-top:7px;padding:12px;border:1px solid #ccd6e2;border-radius:8px;font:inherit;background:white}
+textarea{resize:vertical}.center{text-align:center;margin-top:20px}.center a{color:#0b70bb;font-weight:700}
+.success,.error{padding:12px;border-radius:8px;margin:12px 0}.success{background:#e7f8ed;color:#176b37}.error{background:#fdebec;color:#a32832}
+.login-box{max-width:460px}.login-icon{text-align:center;font-size:35px}.security-note{text-align:center;margin-top:18px;color:#65758b;font-size:13px}
+.logout-btn{border:0;background:#b52d3b;color:white;padding:9px 14px;border-radius:7px;cursor:pointer;font-weight:700}
+.dashboard{width:min(1200px,92%);margin:35px auto}.dashboard-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}
+.dashboard-heading h1{font-size:30px}.secure-badge{background:#e5f7ec;color:#17713c;padding:8px 13px;border-radius:20px;font-size:13px;font-weight:700}
+.account-card{padding:30px;border-radius:20px;background:linear-gradient(135deg,#0a5d99,#071a33);color:white;display:flex;justify-content:space-between;align-items:center}
+.account-card p{font-size:12px;letter-spacing:1px;opacity:.8}.account-card h2{font-size:38px;margin:5px 0}.account-mark{font-size:35px;font-weight:800}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:20px 0}.stat-card{background:white;padding:20px;border-radius:13px;box-shadow:0 5px 20px #10253a0c}.stat-card span{display:block;color:#718096;font-size:13px}.stat-card strong{font-size:21px;display:block;margin-top:6px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0}.action-card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px #10253a0c}.action-card p{color:#718096;margin:7px 0 18px}
+.transaction-section{background:white;border-radius:15px;padding:25px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{padding:13px;text-align:left;border-bottom:1px solid #e8edf3;font-size:14px}th{background:#f7f9fc}
+.type{font-weight:700;font-size:12px}.deposit,.received{color:#138345}.withdraw,.transfer{color:#b15a00}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}.profile-grid>div{padding:18px;background:#f7f9fc;border-radius:10px}.profile-grid span,.receipt-row span{display:block;color:#718096;font-size:12px}.profile-grid strong{display:block;margin-top:4px}.wide{grid-column:1/-1}
+.receipt{max-width:600px;text-align:center}.receipt-logo{font-size:27px;font-weight:800;color:#0b5e9e;margin-bottom:20px}.receipt-status{color:#17713c;font-weight:800;margin-bottom:15px}.receipt-row{display:flex;justify-content:space-between;gap:20px;text-align:left;padding:14px 0;border-bottom:1px solid #e7edf4}.receipt-buttons{display:flex;justify-content:center;gap:12px;margin-top:25px}
+
+@media(max-width:800px){
+ .navbar{padding:15px 5%;flex-wrap:wrap}.nav-links{gap:12px;flex-wrap:wrap}
+ .hero{padding:45px 6%;flex-direction:column;align-items:flex-start}.hero h1{font-size:38px}.bank-card{width:100%;max-width:370px}
+ .features,.actions,.stats-grid{grid-template-columns:1fr}.grid-2,.profile-grid{grid-template-columns:1fr}.wide{grid-column:auto}
+ .dashboard-heading{align-items:flex-start;gap:15px;flex-direction:column}
+ .account-card h2{font-size:30px}
+ .form-container,.login-box,.profile-container,.receipt{padding:25px}
+}
+@media(max-width:480px){
+ .nav-links{font-size:13px}.hero-buttons{flex-direction:column;width:100%}.hero-buttons .btn{width:100%;text-align:center}
+ .bank-card{height:auto;min-height:200px}.card-number{font-size:15px}
+ .dashboard{width:94%}.transaction-section{padding:15px}
+ th,td{font-size:12px;padding:9px}
+ .receipt-row{font-size:13px}
+}
+@media print{
+ .receipt-buttons{display:none}.receipt{box-shadow:none;margin:0;width:100%}body{background:white}
+}

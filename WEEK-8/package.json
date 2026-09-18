@@ -1,0 +1,17 @@
+{
+  "name": "bst-bank",
+  "version": "1.0.0",
+  "description": "BST Bank Online Banking Demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0"
+  }
+}

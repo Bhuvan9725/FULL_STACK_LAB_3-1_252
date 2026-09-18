@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BST Bank | Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="brand">BST <span>BANK</span></div>
+  <div class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <a href="change-password.html">Change Password</a>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+</nav>
+
+<main class="dashboard">
+  <div class="dashboard-heading">
+    <div><p class="eyebrow">PERSONAL BANKING</p><h1>Welcome, <span id="userName">Customer</span></h1></div>
+    <span class="secure-badge">✓ Secure Session</span>
+  </div>
+
+  <section class="account-card">
+    <div>
+      <p>AVAILABLE BALANCE</p>
+      <h2 id="balance">₹0.00</h2>
+      <small>Account: <span id="accountNumber">-</span></small>
+    </div>
+    <div class="account-mark">BST</div>
+  </section>
+
+  <section class="stats-grid">
+    <div class="stat-card"><span>Total Deposits</span><strong id="totalDeposits">₹0.00</strong></div>
+    <div class="stat-card"><span>Total Withdrawals</span><strong id="totalWithdrawals">₹0.00</strong></div>
+    <div class="stat-card"><span>Total Transfers</span><strong id="totalTransfers">₹0.00</strong></div>
+    <div class="stat-card"><span>Transactions</span><strong id="transactionCount">0</strong></div>
+  </section>
+
+  <section class="actions">
+    <div class="action-card">
+      <h3>Deposit Money</h3>
+      <p>Add money to your account.</p>
+      <button id="depositBtn" class="btn primary">Deposit</button>
+    </div>
+    <div class="action-card">
+      <h3>Withdraw Money</h3>
+      <p>Withdraw money from your account.</p>
+      <button id="withdrawBtn" class="btn primary">Withdraw</button>
+    </div>
+    <div class="action-card">
+      <h3>Transfer Money</h3>
+      <p>Send money to another BST account.</p>
+      <button id="transferBtn" class="btn primary">Transfer</button>
+    </div>
+  </section>
+
+  <section class="transaction-section">
+    <div class="section-head"><h2>Recent Transactions</h2><button id="refreshBtn" class="btn secondary">Refresh</button></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Type</th><th>Amount</th><th>Date</th></tr></thead>
+        <tbody id="transactionBody"><tr><td colspan="4">Loading...</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1789581160287",
+    "name": "BHUVANA SANKAR THIRAMSETTI",
+    "dob": "2007-08-24",
+    "gender": "Male",
+    "email": "tiramsettibhuvanashankar@gmail.com",
+    "mobile": "7396076389",
+    "username": "BHUVANASANKAR",
+    "passwordHash": "$2b$12$YGv20mAJqf9BvJU773q0COsYl0P5ydnrpkQdGFOEpA1YVTjVW9roe",
+    "address": "SUBBAMPETA",
+    "accountNumber": "BST3116946743",
+    "balance": 12250,
+    "createdAt": "2026-09-16T17:52:40.287Z"
+  }
+]

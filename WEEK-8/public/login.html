@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BST Bank | Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+<nav class="navbar">
+  <div class="brand">BST <span>BANK</span></div>
+  <div class="nav-links"><a href="index.html">Home</a><a href="register.html">Register</a></div>
+</nav>
+
+<div class="login-box">
+  <div class="login-icon">🔐</div>
+  <h1>Welcome Back</h1>
+  <p class="muted">Login to your BST Bank account</p>
+  <div id="message"></div>
+  <form id="loginForm">
+    <label>Username or Email<input name="username" required autocomplete="username"></label>
+    <label>Password<input type="password" name="password" required autocomplete="current-password"></label>
+    <button class="btn primary full" type="submit">Login Securely</button>
+  </form>
+  <p class="center">New customer? <a href="register.html">Create account</a></p>
+  <div class="security-note">Your connection is protected with session-based authentication.</div>
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>
