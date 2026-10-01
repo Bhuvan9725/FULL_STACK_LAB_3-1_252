@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fb;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 70px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #087f8c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #087f8c;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 380px;
+  background: linear-gradient(135deg, #087f8c, #16a5b5);
+  color: white;
+  padding: 70px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 550px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  display: inline-block;
+  background: white;
+  color: #087f8c;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.hero-icon {
+  font-size: 150px;
+}
+
+/* Form */
+
+.form-section {
+  padding: 60px 20px;
+}
+
+.form-card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.form-heading h2 {
+  color: #087f8c;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.form-heading p {
+  color: #777;
+}
+
+form h3 {
+  color: #087f8c;
+  margin: 25px 0 20px;
+  border-bottom: 2px solid #e5eeee;
+  padding-bottom: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #087f8c;
+  box-shadow: 0 0 0 2px rgba(8, 127, 140, 0.1);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: normal;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.terms input {
+  width: auto;
+}
+
+.register-button,
+.new-button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background: #087f8c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.register-button:hover,
+.new-button:hover {
+  background: #056873;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background: #073b40;
+  color: white;
+  padding: 30px;
+  line-height: 1.8;
+}
+
+/* Success */
+
+.success-container {
+  min-height: 100vh;
+  background: #f4f8fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.success-card {
+  background: white;
+  max-width: 550px;
+  width: 100%;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  background: #0ca678;
+  color: white;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.success-card h1 {
+  margin: 20px 0 10px;
+  color: #087f8c;
+}
+
+.success-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.appointment-details {
+  background: #f1f8f8;
+  text-align: left;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.appointment-details p {
+  margin: 8px 0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 15px 5%;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-icon {
+    display: none;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .radio-group {
+    flex-wrap: wrap;
+  }
+}
