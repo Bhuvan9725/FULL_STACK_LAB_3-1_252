@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+}
+
+
+/* ================================
+   MAIN PAGE
+================================ */
+
+.page {
+  min-height: 100vh;
+  padding: 40px 25px;
+}
+
+
+/* ================================
+   FORM + DATA CONTAINER
+================================ */
+
+.form-box,
+.data-box {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-box {
+  max-width: 650px;
+}
+
+.form-box h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2563eb;
+  font-size: 30px;
+}
+
+
+/* ================================
+   LABELS
+================================ */
+
+form > label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #334155;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ================================
+   RADIO + CHECKBOX ROW
+================================ */
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.row label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #475569;
+}
+
+.row input[type="radio"],
+.row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+form button,
+.data-box button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+/* Register / Update */
+
+form button[type="submit"] {
+  margin-top: 25px;
+  background: #2563eb;
+  color: white;
+}
+
+form button[type="submit"]:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+
+/* Reset */
+
+form button[type="button"] {
+  margin-top: 25px;
+  margin-left: 10px;
+  background: #e2e8f0;
+  color: #334155;
+}
+
+form button[type="button"]:hover {
+  background: #cbd5e1;
+}
+
+
+/* ================================
+   MESSAGE
+================================ */
+
+.message {
+  margin-top: 20px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-left: 4px solid #2563eb;
+  font-size: 14px;
+}
+
+
+/* ================================
+   STUDENT TABLE
+================================ */
+
+.data-box h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  font-size: 24px;
+}
+
+.data-box {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+thead {
+  background: #2563eb;
+  color: white;
+}
+
+th,
+td {
+  padding: 13px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+td {
+  font-size: 14px;
+  color: #475569;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* ================================
+   TABLE ACTION BUTTONS
+================================ */
+
+.data-box td button {
+  margin-right: 7px;
+  padding: 8px 13px;
+}
+
+
+/* Edit */
+
+.data-box td button:first-child {
+  background: #f59e0b;
+  color: white;
+}
+
+.data-box td button:first-child:hover {
+  background: #d97706;
+}
+
+
+/* Delete */
+
+.data-box td button:last-child {
+  background: #ef4444;
+  color: white;
+}
+
+.data-box td button:last-child:hover {
+  background: #dc2626;
+}
+
+
+/* ================================
+   EMPTY TABLE
+================================ */
+
+tbody:empty::after {
+  content: "No students registered yet";
+  display: block;
+  padding: 20px;
+  color: #64748b;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+  .page {
+    padding: 20px 12px;
+  }
+
+  .form-box,
+  .data-box {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .form-box h1 {
+    font-size: 25px;
+  }
+
+  .data-box h2 {
+    font-size: 20px;
+  }
+
+  .row {
+    gap: 15px;
+  }
+
+  form button[type="submit"],
+  form button[type="button"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  form button[type="button"] {
+    margin-top: 10px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE DEVICES
+================================ */
+
+@media (max-width: 480px) {
+
+  .page {
+    padding: 12px 8px;
+  }
+
+  .form-box,
+  .data-box {
+    padding: 16px;
+  }
+
+  .form-box h1 {
+    font-size: 22px;
+  }
+
+  .data-box h2 {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    font-size: 14px;
+    padding: 11px;
+  }
+}
